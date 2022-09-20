@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Employee</title>
+    </head>
+    <body>
+        <h1> Employee </h1>
+        <ol>{%  for employee in employee %}
+           <li>{{employee}} <button><a style="text-decoration:none;color:black" href="{{employee.id}}/">more info</a></button> </li><br>
+        {% endfor %}</ol>
+        <button><a style="text-decoration:none;color:black" href="/newapp/create/">Add New Employee</a></button>
+    </body>
+</html>

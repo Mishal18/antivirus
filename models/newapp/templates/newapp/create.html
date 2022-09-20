@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Add Employee</title>
+    </head>
+    <body>
+        <button><a style="text-decoration:none;color:black" href="/newapp">Back</a></button>
+        <h1>Add New Employee </h1>
+        <form method="post" action="/newapp/create/">
+            {% csrf_token %}
+            Name : <input type="text" name="name"><br><br>
+            Age : <input type="number" name="age"><br><br>
+            Department : <input type="text" name="department"><br><br>
+            Salary : <input type="number" name="salary"><br><br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>
